@@ -1,16 +1,16 @@
 package spec_iterator_test
 
 import (
-	. "github.com/onsi/ginkgo/internal/spec_iterator"
+	. "github.com/brookskindle/ginkgo/internal/spec_iterator"
 
-	"github.com/onsi/ginkgo/internal/codelocation"
-	"github.com/onsi/ginkgo/internal/containernode"
-	"github.com/onsi/ginkgo/internal/leafnodes"
-	"github.com/onsi/ginkgo/internal/spec"
-	"github.com/onsi/ginkgo/types"
+	"github.com/brookskindle/ginkgo/internal/codelocation"
+	"github.com/brookskindle/ginkgo/internal/containernode"
+	"github.com/brookskindle/ginkgo/internal/leafnodes"
+	"github.com/brookskindle/ginkgo/internal/spec"
+	"github.com/brookskindle/ginkgo/types"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/gomega"
 )
 
 var _ = Describe("SerialSpecIterator", func() {

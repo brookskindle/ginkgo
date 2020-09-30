@@ -1,20 +1,20 @@
 package specrunner_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	"github.com/onsi/ginkgo/internal/spec_iterator"
-	. "github.com/onsi/ginkgo/internal/specrunner"
-	"github.com/onsi/ginkgo/types"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	"github.com/brookskindle/ginkgo/internal/spec_iterator"
+	. "github.com/brookskindle/ginkgo/internal/specrunner"
+	"github.com/brookskindle/ginkgo/types"
+	. "github.com/brookskindle/gomega"
 
-	"github.com/onsi/ginkgo/config"
-	"github.com/onsi/ginkgo/internal/codelocation"
-	"github.com/onsi/ginkgo/internal/containernode"
-	Failer "github.com/onsi/ginkgo/internal/failer"
-	"github.com/onsi/ginkgo/internal/leafnodes"
-	"github.com/onsi/ginkgo/internal/spec"
-	Writer "github.com/onsi/ginkgo/internal/writer"
-	"github.com/onsi/ginkgo/reporters"
+	"github.com/brookskindle/ginkgo/config"
+	"github.com/brookskindle/ginkgo/internal/codelocation"
+	"github.com/brookskindle/ginkgo/internal/containernode"
+	Failer "github.com/brookskindle/ginkgo/internal/failer"
+	"github.com/brookskindle/ginkgo/internal/leafnodes"
+	"github.com/brookskindle/ginkgo/internal/spec"
+	Writer "github.com/brookskindle/ginkgo/internal/writer"
+	"github.com/brookskindle/ginkgo/reporters"
 )
 
 var noneFlag = types.FlagTypeNone

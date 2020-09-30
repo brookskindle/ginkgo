@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/onsi/ginkgo/internal/spec"
+	"github.com/brookskindle/ginkgo/internal/spec"
 )
 
 type ParallelIterator struct {

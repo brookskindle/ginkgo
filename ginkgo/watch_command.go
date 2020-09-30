@@ -6,12 +6,12 @@ import (
 	"regexp"
 	"time"
 
-	"github.com/onsi/ginkgo/config"
-	"github.com/onsi/ginkgo/ginkgo/interrupthandler"
-	"github.com/onsi/ginkgo/ginkgo/testrunner"
-	"github.com/onsi/ginkgo/ginkgo/testsuite"
-	"github.com/onsi/ginkgo/ginkgo/watch"
-	colorable "github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable"
+	"github.com/brookskindle/ginkgo/config"
+	"github.com/brookskindle/ginkgo/ginkgo/interrupthandler"
+	"github.com/brookskindle/ginkgo/ginkgo/testrunner"
+	"github.com/brookskindle/ginkgo/ginkgo/testsuite"
+	"github.com/brookskindle/ginkgo/ginkgo/watch"
+	colorable "github.com/brookskindle/ginkgo/reporters/stenographer/support/go-colorable"
 )
 
 func BuildWatchCommand() *Command {

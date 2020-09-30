@@ -49,7 +49,7 @@ func removeTestingImport(rootNode *ast.File) {
 }
 
 /*
- * Adds import statements for onsi/ginkgo, if missing
+ * Adds import statements for brookskindle/ginkgo, if missing
  */
 func addGinkgoImports(rootNode *ast.File) {
 	importDecl, err := importsForRootNode(rootNode)
@@ -69,13 +69,13 @@ func addGinkgoImports(rootNode *ast.File) {
 			continue
 		}
 
-		if importSpec.Path.Value == "\"github.com/onsi/ginkgo\"" {
+		if importSpec.Path.Value == "\"github.com/brookskindle/ginkgo\"" {
 			needsGinkgo = false
 		}
 	}
 
 	if needsGinkgo {
-		importDecl.Specs = append(importDecl.Specs, createImport(".", "\"github.com/onsi/ginkgo\""))
+		importDecl.Specs = append(importDecl.Specs, createImport(".", "\"github.com/brookskindle/ginkgo\""))
 	}
 }
 

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/onsi/ginkgo/internal/codelocation"
-	"github.com/onsi/ginkgo/internal/global"
-	"github.com/onsi/ginkgo/types"
+	"github.com/brookskindle/ginkgo/internal/codelocation"
+	"github.com/brookskindle/ginkgo/internal/global"
+	"github.com/brookskindle/ginkgo/types"
 )
 
 /*

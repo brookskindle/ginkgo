@@ -1,8 +1,8 @@
 package synchronized_setup_tests_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/gomega"
 
 	"fmt"
 	"os"

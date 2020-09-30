@@ -3,10 +3,10 @@ package testrunner_test
 import (
 	"testing"
 
-	. "github.com/onsi/ginkgo"
-	"github.com/onsi/ginkgo/ginkgo/testrunner"
-	"github.com/onsi/ginkgo/ginkgo/testsuite"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	"github.com/brookskindle/ginkgo/ginkgo/testrunner"
+	"github.com/brookskindle/ginkgo/ginkgo/testsuite"
+	. "github.com/brookskindle/gomega"
 )
 
 func strAddr(s string) interface{} {

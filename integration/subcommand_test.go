@@ -6,10 +6,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	. "github.com/onsi/ginkgo"
-	"github.com/onsi/ginkgo/types"
-	. "github.com/onsi/gomega"
-	"github.com/onsi/gomega/gexec"
+	. "github.com/brookskindle/ginkgo"
+	"github.com/brookskindle/ginkgo/types"
+	. "github.com/brookskindle/gomega"
+	"github.com/brookskindle/gomega/gexec"
 )
 
 var _ = Describe("Subcommand", func() {
@@ -34,8 +34,8 @@ var _ = Describe("Subcommand", func() {
 			Ω(content).Should(ContainSubstring("RegisterFailHandler"))
 			Ω(content).Should(ContainSubstring("RunSpecs"))
 
-			Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/ginkgo"`))
-			Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/gomega"`))
+			Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/ginkgo"`))
+			Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/gomega"`))
 
 			session = startGinkgo(pkgPath, "bootstrap")
 			Eventually(session).Should(gexec.Exit(1))
@@ -60,8 +60,8 @@ var _ = Describe("Subcommand", func() {
 			Ω(content).Should(ContainSubstring("var It = ginkgo.It"))
 			Ω(content).Should(ContainSubstring("var Ω = gomega.Ω"))
 
-			Ω(content).Should(ContainSubstring("\t" + `"github.com/onsi/ginkgo"`))
-			Ω(content).Should(ContainSubstring("\t" + `"github.com/onsi/gomega"`))
+			Ω(content).Should(ContainSubstring("\t" + `"github.com/brookskindle/ginkgo"`))
+			Ω(content).Should(ContainSubstring("\t" + `"github.com/brookskindle/gomega"`))
 		})
 
 		It("should generate an agouti bootstrap file when told to", func() {
@@ -78,8 +78,8 @@ var _ = Describe("Subcommand", func() {
 			Ω(content).Should(ContainSubstring("RegisterFailHandler"))
 			Ω(content).Should(ContainSubstring("RunSpecs"))
 
-			Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/ginkgo"`))
-			Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/gomega"`))
+			Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/ginkgo"`))
+			Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/gomega"`))
 			Ω(content).Should(ContainSubstring("\t" + `"github.com/sclevine/agouti"`))
 		})
 
@@ -107,8 +107,8 @@ var _ = Describe("Subcommand", func() {
 			content, err := ioutil.ReadFile(filepath.Join(pkgPath, "foo_suite_test.go"))
 			Ω(err).ShouldNot(HaveOccurred())
 			Ω(content).Should(ContainSubstring("package foo_test"))
-			Ω(content).Should(ContainSubstring(`. "github.com/onsi/ginkgo"`))
-			Ω(content).Should(ContainSubstring(`. "github.com/onsi/gomega"`))
+			Ω(content).Should(ContainSubstring(`. "github.com/brookskindle/ginkgo"`))
+			Ω(content).Should(ContainSubstring(`. "github.com/brookskindle/gomega"`))
 			Ω(content).Should(ContainSubstring(`"binary"`))
 			Ω(content).Should(ContainSubstring("// This is a foo_test test"))
 		})
@@ -164,8 +164,8 @@ var _ = Describe("Subcommand", func() {
 				Ω(err).ShouldNot(HaveOccurred())
 				Ω(content).Should(ContainSubstring("package foo_bar_test"))
 				Ω(content).Should(ContainSubstring(`var _ = Describe("FooBar", func() {`))
-				Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/ginkgo"`))
-				Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/gomega"`))
+				Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/ginkgo"`))
+				Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/gomega"`))
 
 				session = startGinkgo(pkgPath, "generate")
 				Eventually(session).Should(gexec.Exit(1))
@@ -283,8 +283,8 @@ var _ = Describe("Subcommand", func() {
 				content, err := ioutil.ReadFile(filepath.Join(pkgPath, "foo_bar_test.go"))
 				Ω(err).ShouldNot(HaveOccurred())
 				Ω(content).Should(ContainSubstring("package foo_bar_test"))
-				Ω(content).ShouldNot(ContainSubstring("\t" + `. "github.com/onsi/ginkgo"`))
-				Ω(content).ShouldNot(ContainSubstring("\t" + `. "github.com/onsi/gomega"`))
+				Ω(content).ShouldNot(ContainSubstring("\t" + `. "github.com/brookskindle/ginkgo"`))
+				Ω(content).ShouldNot(ContainSubstring("\t" + `. "github.com/brookskindle/gomega"`))
 			})
 		})
 
@@ -299,8 +299,8 @@ var _ = Describe("Subcommand", func() {
 				content, err := ioutil.ReadFile(filepath.Join(pkgPath, "foo_bar_test.go"))
 				Ω(err).ShouldNot(HaveOccurred())
 				Ω(content).Should(ContainSubstring("package foo_bar_test"))
-				Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/ginkgo"`))
-				Ω(content).Should(ContainSubstring("\t" + `. "github.com/onsi/gomega"`))
+				Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/ginkgo"`))
+				Ω(content).Should(ContainSubstring("\t" + `. "github.com/brookskindle/gomega"`))
 				Ω(content).Should(ContainSubstring("\t" + `. "github.com/sclevine/agouti/matchers"`))
 				Ω(content).Should(ContainSubstring("\t" + `"github.com/sclevine/agouti"`))
 				Ω(content).Should(ContainSubstring("page, err = agoutiDriver.NewPage()"))

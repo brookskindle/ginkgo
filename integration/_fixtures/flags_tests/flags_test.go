@@ -7,9 +7,9 @@ import (
 	_ "math/cmplx"
 	"time"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/ginkgo/integration/_fixtures/flags_tests"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/ginkgo/integration/_fixtures/flags_tests"
+	. "github.com/brookskindle/gomega"
 )
 
 var customFlag string

@@ -3,9 +3,9 @@ Ginkgo is a BDD-style testing framework for Golang
 
 The godoc documentation describes Ginkgo's API.  More comprehensive documentation (with examples!) is available at http://onsi.github.io/ginkgo/
 
-Ginkgo's preferred matcher library is [Gomega](http://github.com/onsi/gomega)
+Ginkgo's preferred matcher library is [Gomega](http://github.com/brookskindle/gomega)
 
-Ginkgo on Github: http://github.com/onsi/ginkgo
+Ginkgo on Github: http://github.com/brookskindle/ginkgo
 
 Ginkgo is MIT-Licensed
 */
@@ -20,16 +20,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/onsi/ginkgo/config"
-	"github.com/onsi/ginkgo/internal/codelocation"
-	"github.com/onsi/ginkgo/internal/global"
-	"github.com/onsi/ginkgo/internal/remote"
-	"github.com/onsi/ginkgo/internal/testingtproxy"
-	"github.com/onsi/ginkgo/internal/writer"
-	"github.com/onsi/ginkgo/reporters"
-	"github.com/onsi/ginkgo/reporters/stenographer"
-	colorable "github.com/onsi/ginkgo/reporters/stenographer/support/go-colorable"
-	"github.com/onsi/ginkgo/types"
+	"github.com/brookskindle/ginkgo/config"
+	"github.com/brookskindle/ginkgo/internal/codelocation"
+	"github.com/brookskindle/ginkgo/internal/global"
+	"github.com/brookskindle/ginkgo/internal/remote"
+	"github.com/brookskindle/ginkgo/internal/testingtproxy"
+	"github.com/brookskindle/ginkgo/internal/writer"
+	"github.com/brookskindle/ginkgo/reporters"
+	"github.com/brookskindle/ginkgo/reporters/stenographer"
+	colorable "github.com/brookskindle/ginkgo/reporters/stenographer/support/go-colorable"
+	"github.com/brookskindle/ginkgo/types"
 )
 
 const GINKGO_VERSION = config.VERSION

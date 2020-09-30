@@ -1,9 +1,9 @@
 package failing_ginkgo_tests_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/ginkgo/integration/_fixtures/failing_ginkgo_tests"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/ginkgo/integration/_fixtures/failing_ginkgo_tests"
+	. "github.com/brookskindle/gomega"
 )
 
 var _ = Describe("FailingGinkgoTests", func() {

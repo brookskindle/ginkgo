@@ -9,9 +9,9 @@ import (
 	"path/filepath"
 	"runtime"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	"github.com/onsi/gomega/gexec"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/gomega"
+	"github.com/brookskindle/gomega/gexec"
 
 	"testing"
 	"time"

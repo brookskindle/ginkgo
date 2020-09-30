@@ -3,8 +3,8 @@ package A_test
 import (
 	. "$ROOT_PATH$/A"
 
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/gomega"
 )
 
 var _ = Describe("A", func() {

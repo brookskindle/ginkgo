@@ -1,9 +1,9 @@
 package spec_iterator_test
 
 import (
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/ginkgo/internal/spec_iterator"
-	. "github.com/onsi/gomega"
+	. "github.com/brookskindle/ginkgo"
+	. "github.com/brookskindle/ginkgo/internal/spec_iterator"
+	. "github.com/brookskindle/gomega"
 )
 
 var _ = Describe("ParallelizedIndexRange", func() {
